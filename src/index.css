@@ -1,13 +1,342 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    font-family: 'Red Hat Display', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main_nav{
+    background: white;
+    max-width: 100%;
+    min-height: 130px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.nav_logo img{
+    width: 67px;
+    /* max-width: 103px; */
+    height: 49px;
+}
+.nav_search{
+   border-radius: 50%;
+   margin-top: -16px;
+   margin-left:-5px;
+   width: 66px;
+   height: 56px;
+display:flex;
+justify-content: center;
+align-items:center;
+background: url('./images/Group5.png')  no-repeat center center/cover;
+
+}
+.nav_right{
+    width: 329px;
+    display: flex;
+    justify-content:space-between;
+}
+.nav_right li{
+    font-size: 20px;
+    line-height: 28px;
+    list-style:none;
+    color: #676565;
+}
+.nav_startup{
+    margin-top: -140px;
+    background: url('./images/Rectangle8.png')  no-repeat center center/contain;
+    width: 100%;
+    min-height: 530px;
+}
+.nav_header{
+    width: 473px;
+    margin-top: 25px;
+    font-size: 40px;
+    line-height: 58px;
+    max-width: 806px;
+    color: #FFFFFF;
+    /* text-align: right; */
+    position: absolute;
+    top: 134px;
+    left: 560px;
+    right: -11px;
+    text-align: center;
+    font-weight: bold;
+}
+.nav_links{
+    justify-content: space-between;
+    display: flex;
+    width: 114px;
+    margin-left: 16px;
+}
+.svg:hover{
+    fill:#e3e3e3;
+    cursor:pointer;
+}
+.insta:hover{
+    fill:#e3e3e3;
+    cursor:pointer;
+}
+.nav_btn {
+ bottom: 113px;
+    /* display: block; */
+    /* top: 0; */
+    position: absolute;
+    width: 167px;
+    height: 60px;
+    background: linear-gradient(
+104.61deg
+, #FF00B8 2.65%, #FF655B 51.83%, #FFC700 100%);
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+    /* flex: none; */
+    order: 1;
+    /* flex-grow: 0; */
+    margin: 32px 0px;
+    /* left: 0; */
+    right: 185px;
+    border:none
+}
+
+.nav_btn:focus{
+outline:none
+}
+.incub_header{
+    font-size: 60px;
+line-height: 59px;
+width:279px;
+color: #FFF;
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 18px 0px;
+}
+.incub_subheader{
+font-weight: 500;
+font-size: 30px;
+line-height: 40px;
+width: 279px;
+color: #FFFFFF;
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 18px 0px;
+}
+.main_incube{
+    display: flex;
+padding: 30px 10px;
+margin-top: -157px;
+background: linear-gradient(104.61deg, #FF00B8 2.65%, #FF655B 51.83%, #FFC700 100%);
+
+}
+.startup_card:hover{
+    transition:.2s ease-out;
+    box-shadow: 39px 25px 74px -17px rgb(0 0 0 / 12%);
+}
+.nav_right li:hover{
+    opacity:0.7;
+    transition: .2s ease-in;
+    cursor:pointer
+}
+.nav_btn:hover{
+    transition: .2s ease-in-out ;
+    opacity: 0.8;
+}
+.card_header{
+    margin-left:16px;
+    display:flex;
+}
+#slide_startup_data{
+    margin: 0 107px;
+}
+.btn_fund:hover{
+    color: #141471;;
+    background:white;
+    transition:.2s
+}
+.link_startup:hover{
+border:none;
+font-size: 17px;
+}
+.link_startup_btn:hover{
+    background: white;
+    box-shadow: 12px 34px 23px 3px #00000070;
+}
+.website_startUP:hover{
+         opacity: 0.7;
+         cursor:pointer;
+}
+.nav_logo img:hover{
+    background:red;
+    cursor:pointer
+}
+.slider{
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    width: 489px;
+}
+.slider a.previousButton svg polygon, .slider a.nextButton svg polygon{
+   fill: white;
+}
+
+.slider a.previousButton ,.slider a.nextButton{
+display:flex;
+align-items:center;
+justify-content:center;
+background: rgba(255, 255, 255, 0.2);
+border: 1px solid rgba(255, 255, 255, 0.4);
+width: 42px;
+height: 42px;
+border-radius:50%
+}
+.startup_card{
+width: 284px;
+height: 360px;
+display:flex;
+justify-content: space-between;
+padding: 24px 13px;
+margin: 10px;
+flex-direction:column;
+background: #FFFFFF;
+text-decoration:none;
+border-radius: 20px;
+}
+.card_header img{
+width: 50px;
+height: 40px
+}
+.incubator_footer_btn{
+    border: 2px solid #FFFFFF;
+border-radius: 4px;
+text-align:center;
+padding: 10px 30px;
+background:none;
+color:white;
+margin:20px auto;
+display:block;
+}
+.card_name{
+    margin-left: 7px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 48px;
+    color: #000000;
+}
+.card_descr{
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+color: #000000;
+margin-left:16px;
+}
+.incub_slides_startup{
+    display:flex;
+}
+.card_range img{
+    width: 264px;
+    margin: 0 auto;
+    display: block;
+   
+}
+.card_price{
+    margin-left:16px;
+    color:#000;
+}
+.card_info{
+    margin: 0 auto;
+    width: 257px;
+    color:black;
+    display: flex;
+    justify-content: space-between;
+}
+.btn_fund{
+    width: 127px;
+    height: 49px;
+    background: #141471;
+    border-radius: 4px;
+    border: none;
+    color: white;
+}
+.link_startup{
+    display: flex;
+    height: 45px;
+    width: 127px;
+    border: 2px solid #141471;
+    border-radius: 4px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-left:6px;
+}
+.card_button{
+    
+    margin: 2px auto -15px auto;
+    display:flex;
+
+}
+.link_starts_blocks{
+display:flex;
+background: linear-gradient(104.61deg, #FF00B8 2.65%, #FF655B 51.83%, #FFC700 100%);
+
+}
+.link_startup_first{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: url('./images/Rectangle 840.png')  no-repeat center center/contain;
+    width: 422px;
+    height: 327px;
+    margin: 5px;
+}
+.link_startup_btn{
+font-size: 20px;
+line-height: 32px;
+text-align: center;
+width: 150px;
+height: 46px;
+border: 2px solid #FFFFFF;
+border-radius: 4px;
+color: #FFFFFF;
+display: flex;
+justify-content:center;
+align-items:center;
+   
+    text-decoration:none;
+
+}
+#second_link_startup{
+    width:275px
+}
+.link_startup_second{
+    background: url('./images/Rectangle 849.png')  no-repeat center center/contain;
+    width: 422px;
+    height: 327px;
+    margin: 5px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.nav_left{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.link_startup_third{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: url('./images/Rectangle 849.png')  no-repeat center center/contain;
+    width: 422px;
+    height: 327px;
+    margin: 5px;
+}
+.incubator_main_page{
+    display:flex;
+    flex-wrap:wrap;
+}
+.upcoming_startups{
+    display: flex;
+    flex-wrap:wrap;
+    background: linear-gradient(104.61deg, #FF00B8 2.65%, #FF655B 51.83%, #FFC700 100%);
+
 }

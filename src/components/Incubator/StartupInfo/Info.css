@@ -1,0 +1,189 @@
+.start_date{
+    font-weight: 500;
+font-size: 20px;
+line-height: 34px;
+color: #000000;
+}
+.start_site{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+    margin:15px 0 -1px;
+
+}
+.website_startUP{
+font-weight: 500;
+font-size: 20px;
+line-height: 34px;
+color: #003CD8;
+}
+.startup_team_header{
+font-weight: 500;
+font-size: 30px;
+line-height: 38px;
+color: #000000;
+}
+.team_info_block{
+    display:flex;
+    align-items:center;
+}
+.team_info_block span{
+    display:flex;
+    margin-right: 14px;
+    width: 60px;
+height: 60px;
+border-radius:50%;
+background: #C4C4C4;
+}
+.team_names{
+    font-weight:600;
+}
+.tags_header{
+    font-weight: 500;
+font-size: 22px;
+line-height: 38px;
+color: #bba4a4;
+margin-bottom: 8px;
+
+}
+
+.startup_tags span{
+    border: 2px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 4px 7px;
+    text-align:center;
+    font-size: 14px;
+}
+.main_startup_infoBlock{
+    height: 1672px;
+    padding: 24px 14px;
+    background: linear-gradient(104.61deg, #FF00B8 2.65%, #FF655B 51.83%, #FFC700 100%);
+}
+#startup_card_infoBlock{
+    align-items: center;
+    height: 100px;
+    flex-direction: row;
+    display: flex;
+    width: 96%;
+    justify-content: space-between;
+    border-radius: 30px 30px 0px 0px;
+}
+#card_info_block{
+    display:flex;
+}
+#card_fund_block{
+    width: 104px;
+}
+#card_progress_block{
+    width: 179px;
+}
+.card_price_progress{
+    margin-left: 25px;
+}
+#card_range_img{
+    width: 209px;
+}
+.left_nav_startup{
+    margin-left: 12px;
+    height: 800px;
+    padding: 43px 21px;
+    display: flex;
+    background: white;
+    width: 300px;
+    flex-direction: column;
+}
+.tags_block{
+    margin-top: 10px;
+    width: 272px;
+    justify-content: space-between;
+    display: flex;
+}
+#info_startup{
+    position:relative;
+}
+#info_startup:after{
+    content: ' ';
+    width: 269px;
+    height: 1px;
+    position: absolute;
+    background: #CCCCCC;
+    top: 38px;
+    left: 0;
+}
+
+#info_startup_third{
+   border-top: 1px solid #CCCCCC;
+    
+}
+.startup_team{
+    margin-top: -10px;
+}
+.centre_block_startup{
+    display:flex;
+}
+.right_nav_startup{
+    margin: 0 6px 57px 25px;
+   
+    background: white;
+    margin-top: 2px;
+    padding: 1px 23px;
+}
+.nav_right_header{
+font-weight: 500;
+border-top: 1px solid #CCCCCC;
+font-size: 36px;
+line-height: 48px;
+color: #000000;
+margin-bottom: 18px;
+}
+.left_navlinks{
+    justify-content: space-between;
+    display: flex;
+    width: 228px;
+}
+.startup_svg_block{
+    margin-left: 13px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 132px;
+}
+.arrow{
+    width: 28px;
+    height: 28px;
+
+}
+.back_arrow{
+    background: rgba(0, 0, 0, 0.2);
+border: 1px solid rgba(0, 0, 0, 0.4);
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+width: 48px;
+height: 48px;
+}
+.back_arrow:hover{
+    cursor:pointer;
+    background:white;
+    border:none;
+    transition:.2s
+}
+.incubator_footer_btn:hover{
+    color:#181866;
+   border:none;
+   background:white;
+    transition:.2s
+}
+.startup_svg{
+    fill: #003CD8;
+
+}
+.nav_right_info{
+font-size: 17px;
+line-height: 32px;
+text-align: justify;
+color: #000000;
+}
