@@ -14,7 +14,7 @@ const IncubatorStartUps = () => {
         </div>
             <div className='incubator_main_page'>
                 {startupData.map((s)=>(
-                       <Link  to={`/main/${s.startup_id}`} key={s.startip_id} className='startup_card'>
+                       <Link  to={`/startup/${s.startup_id}`} key={s.startip_id} className='startup_card'>
                        <div className="card_header">
                            <img src={image} alt="" />
                            <div className="card_name">{s.startup_name}</div>
@@ -30,8 +30,10 @@ const IncubatorStartUps = () => {
                  </div>
                  <div className="card_button">
                  <button className='btn_fund'>Fund Startup</button>
-{/*                  <Link className='link_startup'>Learn more</Link>
- */}                 </div>
+                 <Link className='link_startup'>Learn more</Link> 
+
+
+                </div>
                  
                    </Link>
                 ))}

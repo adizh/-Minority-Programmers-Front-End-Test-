@@ -1,10 +1,11 @@
 import React from 'react';
 import logo from '../../images/Group2.png'
 import search from '../../images/Vector.png'
-import {FiTwitter}  from 'react-icons/fi'
-import {RiFacebookBoxLine} from 'react-icons/ri'
-import {RiLinkedinBoxLine} from 'react-icons/ri'
-import {RiInstagramLine} from 'react-icons/ri'
+import twitter  from '../../images/Vector (1).png'
+import facebook  from '../../images/Vector (2).png'
+import linkedin  from '../../images/Vector (3).png'
+import insta  from '../../images/insta.png'
+
 const Nav = () => {
     return (
         <div>
@@ -14,10 +15,11 @@ const Nav = () => {
                         <img src={logo} alt='logo' />
                     </div>
                     <div className="nav_links">
-                         <FiTwitter className='svg'/> 
-                         <RiFacebookBoxLine className='svg' />
-                         <RiLinkedinBoxLine className='svg'/>
-                         <RiInstagramLine className='insta'/>
+                         <img src={twitter} className='nav_icon'/>
+                         <img src={facebook} className='nav_icon'/>
+                         <img src={linkedin} className='nav_icon'/>
+                         <img src={insta} className='nav_icon'/>
+                       
                     </div>
                 </div>
                 <ul className="nav_right">

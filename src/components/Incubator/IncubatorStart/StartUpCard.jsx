@@ -17,7 +17,7 @@ const startupData=useSelector(s=>s.reducer.startupData)
 <Slider className='slider'>
   {startupData.map((s, index) => <div key={index}>
 
-  <Link  to={`/main/${s.startup_id}`} key={s.startip_id} className='startup_card' id='slide_startup_data'>
+  <Link  to={`/startup/${s.startup_id}`} key={s.startip_id} className='startup_card' id='slide_startup_data'>
       <div className="card_header">
           <img src={image} alt="" />
           <div className="card_name">{s.startup_name}</div>
@@ -33,7 +33,7 @@ const startupData=useSelector(s=>s.reducer.startupData)
 </div>
 <div className="card_button">
 <button className='btn_fund'>Fund Startup</button>
-{ <Link className='link_startup'>Learn more</Link> }
+<Link className='link_startup'>Learn more</Link> 
 </div>
 
   </Link>

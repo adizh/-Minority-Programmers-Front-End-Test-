@@ -1,4 +1,204 @@
 @media (max-width: 1024px){
+    .nav_right li {
+        font-size: 18px;
+        }
+        .nav_search {
+        
+            width: 57px;
+            height: 50px;
+        }
+        .nav_search img{
+            width: 30px;
+            height: 30px;
+        }
+        .nav_icon {
+            height: 21px;
+        }
+        
 
+.nav_header {
+    width: 456px;
+    margin-top: 25px;
+    font-size: 35px;
+}
+.incub_header {
+    font-size: 43px;
+    line-height: 49px;
+    width: 272px;
+} 
+.incub_subheader {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 35px;
+}
+
+}
+
+@media(max-width:992px){
+    .nav_btn{
+        top: 253px;
+        right: 110px;
+    }
+}
+@media(max-width: 768px){
+.nav_header{
+    width: 489px;
+    margin-top: 25px;
+    font-size: 25px;
+    top: 160px;
+    line-height: 39px;
+    left: 292px;
+}
+
+.slider a.previousButton, .slider a.nextButton {
+
+    width: 36px;
+    height: 36px;
+}
+.slider {
+    right: 631px;
+    top: 108px;
+}
+#slider{
+    right: 45px;
+}
+.incub_header {
+    font-size: 36px;
+    line-height: 44px;
+    width: 761px;
+    margin: 0 auto;
+    text-align: center;
+}
+#second_link_startup {
+    width: 220px;
+    font-size: 16px;
+}
+.upcoming_startups{
+    padding-top: 35px;
+}
+
+.incub_subheader {
+    width: 761px;
+    text-align:center;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 27px;
+    }
+    .card_name {
+    margin-left: 7px;
+    font-weight: 500;
+    font-size: 21px;
+    }
+    .card_info {
+        margin: 0 auto;
+        width: 222px;
+    }
+    .card_price {
+        font-size: 14px;
+    }
+    #card_range_img {
+        width: 146px;
+        margin-left: -22px;
+    }
+    .card_price_progress {
+        margin-left: 10px;
+    }
+    .card_header img {
+        width: 35px;
+        height: 35px;
+    }
+    .arrow {
+        width: 17px;
+        height: 17px;
+    }
+    .back_arrow{
+        width: 40px;
+        height: 39px;
+    }
+    .btn_fund {
+        font-size: 12px;
+        width: 86px;
+        height: 39px;
+    }
+    .main_startup_infoBlock {
+        height: 2083px;
+    }
+
+
+}
+
+
+
+@media(max-width: 540px){
+    .nav_logo img {
+        width: 54px;
+        /* max-width: 103px; */
+        height: 40px;
+    }
+    .nav_icon {
+        height: 15px;
+    }
+    .nav_links {
+        justify-content: space-between;
+        display: flex;
+        width: 106px;
+    }
+    .startup_card{
+        margin: 10px auto;
+    }
+    .nav_btn{
+        top: 234px;
+    right: 92px;
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+    }
+    .nav_right {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 288px;
+    }
+    .nav_search {
+        width: 42px;
+        height: 37px;
+        margin-top: -3px;
+    }
+    .nav_search img {
+        width: 22px;
+        height: 20px;
+        /* margin-top: 12px; */
+    }
+    .nav_header {
+        width: 313px;
+        margin-top: 44px;
+        font-size: 16px;
+        top: 160px;
+        line-height: 26px;
+        left: 244px;
+    }
+    .incub_header {
+        font-size: 22px;
+    }
+    .incub_subheader {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .slider {
+        right: 271px;
+        top: 153px;
+    }
     
+#second_link_startup {
+    width: 167px;
+    line-height: 20px;
+}
+
+.link_startup_btn {
+    font-size: 16px;
+}
+
+
+
 }

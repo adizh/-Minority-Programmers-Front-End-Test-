@@ -8,13 +8,14 @@ import logo from '../../../images/Group2.png'
 import search from '../../../images/Vector.png'
 import range from '../../../images/Group 312.png'
 import image from '../../../images/startImage.png';
-import {FaLinkedinIn} from 'react-icons/fa'
 import arrow from '../../../images/Arrow left (1).png'
-import {ImFacebook} from 'react-icons/im'
-import {FiTwitter}  from 'react-icons/fi'
-import {RiFacebookBoxLine} from 'react-icons/ri'
-import {RiLinkedinBoxLine} from 'react-icons/ri'
-import {RiInstagramLine} from 'react-icons/ri'
+import twitter  from '../../../images/Vector (1).png'
+import facebook  from '../../../images/Vector (2).png'
+import linkedin  from '../../../images/Vector (3).png'
+import insta  from '../../../images/insta.png'
+import blueTwit from '../../../images/Twitter.png'
+import blueLin from '../../../images/Linkedin.png'
+import blueFac from '../../../images/Facebook.png'
 function StartupInfo  ()  {
     const {startupId} = useParams();
     const startup=useSelector(s => s.reducer.startupData.filter((el) => el.startup_id === +startupId))
@@ -30,12 +31,10 @@ function StartupInfo  ()  {
                         <img src={logo} alt='logo' />
                     </div>
                     <div className="nav_links">
-                   
-                         <FiTwitter className='svg'/> 
-                         <RiFacebookBoxLine className='svg' />
-                         <RiLinkedinBoxLine className='svg'/>
-                         <RiInstagramLine className='insta'/>
-                   
+                    <img src={twitter} className='nav_icon'/>
+                         <img src={facebook} className='nav_icon'/>
+                         <img src={linkedin} className='nav_icon'/>
+                         <img src={insta} className='nav_icon'/>
                     </div>
                 </div>
                 <ul className="nav_right">
@@ -90,9 +89,10 @@ function StartupInfo  ()  {
                    <div className='left_navlinks' >
                    <p className='website_startUP'>{startupObj.website}</p>
                     <div className='startup_svg_block'>
-                    <FiTwitter className='startup_svg'/>
-                    <FaLinkedinIn className='startup_svg'/>
-                    <ImFacebook className='startup_svg'/>
+                    <img src={blueTwit}  className='nav_icon' alt='icon'/>
+                    <img src={blueLin} className='nav_icon'  alt='icon'/>
+                    <img src={blueFac} className='nav_icon'  alt='icon'/>
+                   
 
                     </div>
                    </div>
@@ -187,10 +187,10 @@ function StartupInfo  ()  {
     }
 </div>
              </div>
-             <Slider className='slider'>
+             <Slider  id =' slider'className='slider'>
   {startupData.map((s, index) => <div key={index}>
 
-  <Link  to={`/main/${s.startup_id}`} key={s.startip_id} className='startup_card' id='slide_startup_data'>
+  <Link  to={`/startup/${s.startup_id}`} key={s.startip_id} className='startup_card' id='slide_startup_data'>
       <div className="card_header">
           <img src={image} alt="" />
           <div className="card_name">{s.startup_name}</div>

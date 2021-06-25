@@ -15,7 +15,7 @@ const Root = () => {
                     <Route exact path='/main' component={() => <Incubator/>}/>
                     
                        {(Object.entries(startupData).length === 0) ? '' : startupData.error ? <Error/> :
-                                <Route exact path='/main/:startupId' component={() => <StartupInfo/>}/>
+                                <Route exact path='/startup/:startupId' component={() => <StartupInfo/>}/>
 
             }
                     
