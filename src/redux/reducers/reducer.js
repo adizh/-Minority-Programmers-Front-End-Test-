@@ -1,4 +1,4 @@
-import axios from "axios";
+
 
 const initialState = {
     startupData: []
@@ -15,19 +15,9 @@ const func =(state = initialState, action) => {
     }
 }
 export default func
-export const updateStartupData = () => {
+
+export const startupData = (data) => {
     return (dispatch) => {
-        axios('http://localhost:8090/api/v1/startup',
-        {headers:{ "Access-Control-Allow-Origin": "*",
-        'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
-        mode: "cors"   }})
-            .then(({data}) => {
-                    dispatch({type: UPDATE_STARTUP_DATA, startupData: data})
-                }
-            )
-            .catch((err)=>{
-                console.log(err)
-            })
-            
+       dispatch({type:UPDATE_STARTUP_DATA,startupData:data})         
     }
 };

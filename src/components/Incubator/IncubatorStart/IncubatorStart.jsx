@@ -1,12 +1,9 @@
-import React,{useEffect} from 'react';
-import {updateStartupData} from '../../../redux/reducers/reducer'
+import React from 'react';
 
 
 import StartUpCard from './StartUpCard'
 const IncubatorStart = () => {
- useEffect(()=>{
-    updateStartupData()
- },[])
+
     return (
         <div className='main_incube'>
 <div>

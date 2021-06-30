@@ -53,7 +53,7 @@ function StartupInfo  ()  {
 <div>
 {
        <div className='startup_card' id='startup_card_infoBlock'>
-           <Link  className='back_arrow'to='/main' >
+           <Link  className='back_arrow'to='/' >
 
                <img src={arrow} className='arrow'/>
            </Link>

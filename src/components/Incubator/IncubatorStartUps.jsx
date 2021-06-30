@@ -1,6 +1,5 @@
 import React from 'react';
 import {useSelector} from 'react-redux'
-
 import {Link} from 'react-router-dom';
 import range from '../../images/Group 312.png'
 import image from '../../images/startImage.png';
